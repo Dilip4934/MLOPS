@@ -22,9 +22,9 @@ class PredictionPipeline:
         result = np.argmax(model.predict(test_image), axis=1)
         print(result)
 
-        if result[0] == 1:
+        if result[0] ==  1:
             prediction = 'Normal'
             return [prediction]
         else:
             prediction = 'Adenocarcinoma Cancer'
-            return [prediction]
+            return [ prediction]
